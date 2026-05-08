@@ -42,18 +42,25 @@ This project currently uses **clang-format version 18**.
 Please ensure you are using this version to avoid CI formatting failures.
 
 ### Installation
-
+<details>
 #### Ubuntu / Debian
+    
+```bash
 sudo apt install clang-format-18
-
+```
 #### Arch Linux
-sudo pacman -S clang
-
+    
+```bash
+sudo pacman -S clang18
+```
+</details>
 ### Verify Installation
 
 You can check your installed version using:
 
+```bash
 clang-format --version
+```
 
 Ensure the output shows version 18.
 
@@ -76,9 +83,11 @@ If installed locally and you'd prefer to use it in your shell. You can do the fo
 
 ```sh
 # List warnings
-clang-format --dry-run -Werror include/*.h source/*.c
+clang-format --dry-run -Werror include/*.h include/game/*.h source/*.c source/game/*.c
+
 # Modify all files inplace
-clang-format -i include/*.h source/*.c
+clang-format -i include/*.h include/game/*.h source/*.c source/game/*.c
+
 # Or just one
 clang-format -i include/blind.h
 ```
