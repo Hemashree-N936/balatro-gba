@@ -42,19 +42,25 @@ This project currently uses **clang-format version 18**.
 Please ensure you are using this version to avoid CI formatting failures.
 
 ### Installation
+
 <details>
-<summary>Installation</summary>
-#### Ubuntu / Debian
-    
+<summary>Install on Ubuntu / Debian</summary>
+
 ```bash
 sudo apt install clang-format-18
 ```
-#### Arch Linux
-    
+
+</details>
+
+<details>
+<summary>Install on Arch Linux</summary>
+
 ```bash
 sudo pacman -S clang18
 ```
+
 </details>
+
 ### Verify Installation
 
 You can check your installed version using:
