@@ -43,6 +43,7 @@ Please ensure you are using this version to avoid CI formatting failures.
 
 ### Installation
 <details>
+<summary>Installation</summary>
 #### Ubuntu / Debian
     
 ```bash
